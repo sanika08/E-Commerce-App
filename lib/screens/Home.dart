@@ -1,6 +1,7 @@
+import 'package:ecommerce_app/components/popular_products.dart';
 import 'package:flutter/material.dart';
 
-import '../components/category.dart';
+import '../components/Categories.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -83,6 +84,23 @@ class Home extends StatelessWidget {
               ),
             ),
             Categories(),
+            SizedBox(height: 20),
+            Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Popular Products",
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.black,
+                    ),
+                  ),
+                  Text("See More"),
+                ],
+              ),
+            ),
           ],
         ),
       ),
