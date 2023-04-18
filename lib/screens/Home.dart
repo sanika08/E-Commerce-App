@@ -92,15 +92,23 @@ class Home extends StatelessWidget {
                 children: [
                   Text(
                     "Popular Products",
-                    style: TextStyle(
-                      fontSize: 20,
+                    style: Theme.of(context).textTheme.subtitle1!.copyWith(
                       color: Colors.black,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500,
                     ),
                   ),
-                  Text("See More"),
+                  TextButton(
+                    onPressed: (){},
+                    child: const Text(
+                      "See All",
+                      style: TextStyle(color: Colors.black54),
+                    ),
+                  ),
                 ],
               ),
             ),
+            PopularProducts(),
           ],
         ),
       ),
